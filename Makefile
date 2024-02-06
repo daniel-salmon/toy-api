@@ -1,5 +1,8 @@
 build:
-	docker build -t toy-api:latest .
+	docker build -t danielsalmon/toy-api:latest .
+
+push:
+	docker push danielsalmon/toy-api:latest
 
 run:
-	docker run -d -p 8080:8080 toy-api:latest
+	docker run -d -p 8080:8080 danielsalmon/toy-api:latest
